@@ -48,7 +48,7 @@ const TransactionsTable = () => {
         try {
             const encodedSearch = encodeURIComponent(searchText);
             const response = await axios.get(
-                `http://localhost:3000/transactions?page=${currentPage}&perPage=${perPage}&search=${encodedSearch}&month=${selectedMonth}`
+                `https://roxillar-assighnment.onrender.com/?page=${currentPage}&perPage=${perPage}&search=${encodedSearch}&month=${selectedMonth}`
             );
             setTransactions(response.data);
         } catch (error) {

@@ -49,7 +49,7 @@ const TransactionsTable = () => {
     const fetchTransactionStatistics = async () => {
         try {
             const response = await axios.get(
-                `http://localhost:3000/transactionStatistics?month=${selectedMonth}`
+                `https://roxillar-assighnment.onrender.com/?month=${selectedMonth}`
             );
             const { totalAmount, totalSoldItems, totalUnsoldItems } =
                 response.data;

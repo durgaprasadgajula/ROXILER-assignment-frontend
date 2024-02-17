@@ -27,7 +27,7 @@ const PieChartComponent = () => {
     const fetchPieData = async () => {
         try {
             const response = await axios.get(
-                `http://localhost:3000/pieChart?month=${selectedMonth}`
+                `https://roxillar-assighnment.onrender.com/pieChart?month=${selectedMonth}`
             );
             setPieData(response.data);
         } catch (error) {

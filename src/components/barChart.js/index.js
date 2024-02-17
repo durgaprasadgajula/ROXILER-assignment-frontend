@@ -54,7 +54,7 @@ const BarCharts = () => {
     const fetchChartData = async () => {
         try {
             const response = await axios.get(
-                `http://localhost:3000/barChart?month=${selectedMonth}`
+                `https://roxillar-assighnment.onrender.com/barChart?month=${selectedMonth}`
             );
             console.log(response);
             setChartData(response.data);
